@@ -5,6 +5,8 @@ To remove the large file from your Git history while keeping the other files com
     Run the following command to rewrite your Git history and remove the large file:
 
     git filter-branch --tree-filter 'rm -f try3/rfc_model_try3.pkl' --prune-empty HEAD
+    {to force if rewriting} 
+    git filter-branch -f --tree-filter 'rm -f model_pkl_files/final1.zip' --prune-empty HEAD
 
     This command will remove the try3/rfc_model_try3.pkl file from all commits in your Git history.
 

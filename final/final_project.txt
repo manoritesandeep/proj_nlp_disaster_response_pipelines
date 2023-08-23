@@ -9,3 +9,7 @@ Note:
     - table name given is disaster_messages
     - Database name is DisasterResponse.db
     - Model name is classifier.pkl
+
+Final verdict: 
+    Ran all python files for executing the process step-wise. ELT --> ML training --> UI execution
+    The project is a success.
