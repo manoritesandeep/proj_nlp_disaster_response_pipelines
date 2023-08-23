@@ -1,0 +1,19 @@
+To remove the large file from your Git history while keeping the other files committed, you can follow these steps:
+
+    Open your terminal or command prompt and navigate to the root directory of your project.
+
+    Run the following command to rewrite your Git history and remove the large file:
+
+    git filter-branch --tree-filter 'rm -f try3/rfc_model_try3.pkl' --prune-empty HEAD
+
+    This command will remove the try3/rfc_model_try3.pkl file from all commits in your Git history.
+
+    After running the command, Git will rewrite your history. This process may take some time, depending on the size of your repository and the number of commits.
+
+    Once the history has been rewritten, you can force-push the changes to your GitHub repository using the following command:
+
+    git push -f origin master
+
+    Please note that force-pushing will overwrite the remote repository with your local changes. Make sure you have a backup of your repository or any important changes before proceeding.
+
+By following these steps, you should be able to remove the large file from your Git history and push the other files to your GitHub repository. 
