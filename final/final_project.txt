@@ -1,0 +1,11 @@
+This folder contains the final project in the folder disaster_response_pipeline_project
+
+
+Use the line below to run the project:
+python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse
+python train_classifier.py ../data/DisasterResponse.db classifier.pkl
+
+Note:   
+    - table name given is disaster_messages
+    - Database name is DisasterResponse.db
+    - Model name is classifier.pkl

@@ -1,0 +1,125 @@
+[33mcommit 677bd482db616fa352c89c4b811143159294862f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Wed Aug 23 15:03:02 2023 -0500
+
+    updated gitignore file to not upload classifier 1 from final run #1, size issues...
+
+[33mcommit 13bdd309363f3b83cf4c1eb58070bf29d8b6eb31[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Wed Aug 23 15:00:18 2023 -0500
+
+    original RFC classifier model - The classic
+
+[33mcommit 195540d94650afc0b8cc662062acd08b039106b1[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Wed Aug 23 11:14:45 2023 -0500
+
+    try 3 modified code and sample functions...
+
+[33mcommit 80795199cf23792b1bc6b4a8552b878b603865af[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Wed Aug 23 08:56:24 2023 -0500
+
+    helper file to manage large file upload history to git
+
+[33mcommit 635dd5c44b35287f7dd44d6cf64f2db21eb77d2e[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 14:41:54 2023 -0500
+
+    small updates
+
+[33mcommit 79c29d3dde35211a463d554f3494f40f2a968553[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 14:36:26 2023 -0500
+
+    Configure Git LFS for large file
+
+[33mcommit ff4446289eb797a43a9a6ad2f6bf5ed7e77a28d5[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 14:26:49 2023 -0500
+
+    recommiting after removing cache
+
+[33mcommit aa82421944ff9183b5710cabae60ba2536d28eb8[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 14:11:48 2023 -0500
+
+    recommiting after removing cache
+
+[33mcommit e034c7db8eecc9adf1c2e7cf9e47cd66827d9568[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 14:05:46 2023 -0500
+
+    added .gitignore file
+
+[33mcommit e3fa5d855b2c4d85abab59bdaf2b2450d10fc9fb[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 13:51:24 2023 -0500
+
+    added new function to get exact_match_ratio for multiclass-multioutput... slight mods and updates
+
+[33mcommit 1a9b2a65154cdc3a2579d73bd446ae72a63377cd[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 13:50:18 2023 -0500
+
+    added new function to get exact_match_ratio for multiclass-multioutput... slight mods and updates
+
+[33mcommit 00033faef0588babe4bd9db9fe195ab2a537c744[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 13:11:06 2023 -0500
+
+    added grid search cs in try3 and model saving in rcf_simple file in new main2 function
+
+[33mcommit e4157c126ada65e1ab64a2fa04e07109eb1e28ba[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Tue Aug 22 12:22:00 2023 -0500
+
+    first rcf model ready and exported as pickle, trying simple methods... defined functions for steps
+
+[33mcommit f7364090d71780fa82ab68f96b36d855b6c0e6d5[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Mon Aug 21 17:38:05 2023 -0500
+
+    Start of code for try 3... commit 1...
+
+[33mcommit 62e564949a85c635563bf53a07e57853fdce2bdd[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Mon Aug 21 17:06:34 2023 -0500
+
+    starter code for tr3, lots more to come and test...
+
+[33mcommit f755fbc939e194a87e16de8b341f914c32b28f93[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Mon Aug 21 16:58:11 2023 -0500
+
+    rfc changes and test... will be moving to try3 now, try2 not entirely successful...
+
+[33mcommit 97d4fa210ee75a5787e3465daf0a835d55925ac5[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Mon Aug 21 06:11:07 2023 -0500
+
+    Changed code for rfc... new trials... other model failed
+
+[33mcommit 1b5713c0c028a03d872a3038a6bc3f12098c322c[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Sun Aug 20 13:07:18 2023 -0500
+
+    Added modularity in code and added display result statement to compare both model runs per notebook
+
+[33mcommit 3d80fd40e2b0d93af617f11e003baa4f327bfb70[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Sun Aug 20 12:59:17 2023 -0500
+
+    updated table name to Message, read from the DisasterResponse.db sql database file
+
+[33mcommit 9679b890a5cc0cb5bc87664d3013f9ed9285a882[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Sun Aug 20 12:48:38 2023 -0500
+
+    try 2 folder updates, added multiple (5- GB, RCF, NB, LR, KNN) ml models for individual testing
+
+[33mcommit b71a350b093e0477b33d53e910a86a4af41fb5b4[m
+Author: Sandeep Solanki <manoritesandeep@gmail.com>
+Date:   Sun Aug 20 07:40:24 2023 -0500
+
+    Project NLP try1 + ETL pipeline completed
