@@ -1,24 +1,59 @@
 import sys
+import sys
+import pandas as pd
+import numpy as np
+import pickle
+from sqlalchemy import create_engine
+import nltk
+nltk.download(['stopwords','wordnet','punkt','averaged_perceptron_tagger'])
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
 
 def load_data(database_filepath):
-    pass
+    engine = create_engine('sqlite:///' + database_filepath)
+    df = pd.read_sql_table('disaster_messages', engine)
+    X = df['message']
+    Y = df.iloc[:, 4:]
+    category_names = Y.columns.tolist()
+    return X, Y, category_names
 
 
 def tokenize(text):
-    pass
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+    return clean_tokens
 
 
 def build_model():
-    pass
+    pipeline = Pipeline([
+        ('vect', CountVectorizer(tokenizer=tokenize)),
+        ('tfidf', TfidfTransformer()),
+        ('clf', MultiOutputClassifier(RandomForestClassifier()))
+    ])
+    return pipeline
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    pass
+    Y_pred = model.predict(X_test)
+    for i, category in enumerate(category_names):
+        print(f'Category: {category}')
+        print(classification_report(Y_test.iloc[:, i], Y_pred[:, i]))
 
 
 def save_model(model, model_filepath):
-    pass
+    with open(model_filepath, 'wb') as file:
+        pickle.dump(model, file)
 
 
 def main():
