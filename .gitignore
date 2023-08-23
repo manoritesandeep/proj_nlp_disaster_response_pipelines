@@ -1,5 +1,3 @@
 try3/rfc_model_try3.pkl
-\final\disaster_response_pipeline_project\models\classifier.pkl
-/final/disaster_response_pipeline_project/models/classifier.pkl
-/model_pkl_files/final1.zip
-\model_pkl_files\final1.zip
+final/disaster_response_pipeline_project/models/classifier.pkl
+model_pkl_files/final1.zip
