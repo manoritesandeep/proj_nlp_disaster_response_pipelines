@@ -42,6 +42,13 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+
+    # # extract data for visualization 1
+    # category_counts = df.groupby('category').count()['message']
+    # category_names = list(category_counts.index)
+
+    # Visualization 2: Scatter Plot
+    message_lengths = df['message'].apply(len)
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -63,6 +70,43 @@ def index():
                     'title': "Genre"
                 }
             }
+        },
+        #         {
+        #     'data': [
+        #         {
+        #             'type': 'bar',
+        #             'x': category_names,
+        #             'y': category_counts
+        #         }
+        #     ],
+        #     'layout': {
+        #         'title': 'Distribution of Message Categories',
+        #         'yaxis': {
+        #             'title': "Count"
+        #         },
+        #         'xaxis': {
+        #             'title': "Category"
+        #         }
+        #     }
+        # },
+        {
+            'data': [
+                {
+                    'type': 'scatter',
+                    'x': df.index,
+                    'y': message_lengths,
+                    'mode': 'markers'
+                }
+            ],
+            'layout': {
+                'title': 'Message Lengths',
+                'yaxis': {
+                    'title': "Length"
+                },
+                'xaxis': {
+                    'title': "Message Index"
+                }
+            }
         }
     ]
     
@@ -72,7 +116,6 @@ def index():
     
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
-
 
 # web page that handles user query and displays model results
 @app.route('/go')
