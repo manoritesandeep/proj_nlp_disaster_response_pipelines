@@ -13,4 +13,3 @@ Note:
 Final verdict: 
     Ran all python files for executing the process step-wise. ELT --> ML training --> UI execution
     The project is a success.
-
