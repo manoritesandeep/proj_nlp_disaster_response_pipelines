@@ -51,6 +51,9 @@ def clean_data(df):
         # Convert column from string to numeric
         categories[column] = categories[column].astype("int")
 
+    # Change the value of 2 to 1 in the "related" column
+    categories['related'] = categories['related'].replace(2, 1)
+
     # Drop the original categories column from `df`
     df.drop(['categories'], axis=1, inplace=True)
     
@@ -74,7 +77,7 @@ def save_data(df, database_filename):
         - SQL Database file based on given database_filename parameter 
     """
     engine = create_engine(f'sqlite:///{database_filename}.db')
-    df.to_sql("Message", 
+    df.to_sql("disaster_messages", 
           engine, 
           index=False, 
           if_exists='replace')
