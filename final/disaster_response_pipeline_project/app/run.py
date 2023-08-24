@@ -47,10 +47,6 @@ def index():
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
 
-    # # extract data for visualization 1
-    # category_counts = df.groupby('category').count()['message']
-    # category_names = list(category_counts.index)
-
     # Visualization 2: Scatter Plot
     message_lengths = df['message'].apply(len)
     
