@@ -45,12 +45,12 @@ def build_model():
     ])
 
     parameters = {
-        'clf__estimator__min_samples_split': 2,
-        'clf__estimator__n_estimators': 50,
-        'tfidf__smooth_idf': True,
-        'tfidf__use_idf': True,
-        'vect__max_df': 0.5,
-        'vect__max_features': 5000
+        'clf__estimator__min_samples_split': [2],
+        'clf__estimator__n_estimators': [50],
+        'tfidf__smooth_idf': [True],
+        'tfidf__use_idf': [True],
+        'vect__max_df': [0.5],
+        'vect__max_features': [5000]
     }
     cv = GridSearchCV(pipeline, param_grid=parameters)
 
