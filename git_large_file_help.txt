@@ -22,5 +22,4 @@ By following these steps, you should be able to remove the large file from your 
 
 
 To confirm whether the large file was successfully removed, you can check the commit history using the following command:
-
 git log --oneline --name-status
