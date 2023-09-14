@@ -19,3 +19,8 @@ To remove the large file from your Git history while keeping the other files com
     Please note that force-pushing will overwrite the remote repository with your local changes. Make sure you have a backup of your repository or any important changes before proceeding.
 
 By following these steps, you should be able to remove the large file from your Git history and push the other files to your GitHub repository. 
+
+
+To confirm whether the large file was successfully removed, you can check the commit history using the following command:
+
+git log --oneline --name-status
